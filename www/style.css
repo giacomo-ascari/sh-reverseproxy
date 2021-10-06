@@ -4,17 +4,20 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-a {
+button {
     color: #000;
     text-decoration: none;
+    border: none;
     background-color: #eee;
     opacity: 1;
     padding: 10px;
+    margin: 2px 0px;
     border-radius: 4px;
     transition: 0.2s;
+    display: inline-block;
 }
 
-a:hover {
+button:hover {
     opacity: 0.75;
 }
 

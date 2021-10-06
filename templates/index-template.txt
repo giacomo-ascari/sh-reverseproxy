@@ -16,13 +16,9 @@
     </head>
     <body id="_body" onload="changeColor()">
         <div class="center">
-            <!--<img src="logo.png" width="30%">-->
+            <img src="logo.png" width="30%">
             <h2>Giacomo Ascari</h2>
             <br>
-            <!--<a class="_a" href="music-downloader">Music downloader</a>
-            <a class="_a" href="ui">Plum monitor</a>
-            <a class="_a" href="clock">Web clock</a>
-            <a class="_a" href="dc">Dichotomic compression</a>-->
 $(BUTTONS)
             <br><br><br>
             <p>This is the default page of asky.hopto.org, a personal webserver for educational purposes</p>
