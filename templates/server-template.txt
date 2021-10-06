@@ -1,0 +1,26 @@
+server {
+    listen 80;
+    server_name $(NAME);
+    return 301 https://$host$request_uri;
+}
+
+server {
+
+    listen 443 ssl;
+    server_name $(NAME);
+    root /var/www/html;
+    index index.html;
+    
+    ssl_certificate /etc/letsencrypt/live/$(NAME)/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/$(NAME)/privkey.pem; # managed by Certbot
+
+    ssl_session_cache builtin:1000 shared:SSL:10m;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers HIGH:!aNULL:!eNULL:!EXPORT:!CAMELLIA:!DES:!MD5:!PSK:!RC4;
+    ssl_prefer_server_ciphers on;
+    
+    access_log            /var/log/nginx/$(NAME).access.log;
+
+$(LOCATIONS)
+
+}

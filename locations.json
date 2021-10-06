@@ -1,0 +1,22 @@
+{
+    "name": "asky.hopto.org",
+    "locations": [
+        {
+            "name": "Plum Monitor",
+            "path": "/ui",
+            "pass": "http://192.168.0.151:1880",
+            "timeouts": "300"
+        },
+        {
+            "name": "Clock",
+            "path": "/clock",
+            "pass": "http://192.168.0.151:2607"
+        },
+        {
+            "name": "Dichotomic Compression",
+            "path": "/dc",
+            "pass": "http://192.168.0.154:2608",
+            "max_body": "50M"
+        }
+    ]
+}
