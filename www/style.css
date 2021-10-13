@@ -5,8 +5,8 @@ body {
 }
 
 button {
-    color: #000;
-    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
     border: none;
     background-color: #eee;
     opacity: 1;

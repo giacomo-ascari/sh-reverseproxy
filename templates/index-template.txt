@@ -19,6 +19,7 @@
             <img src="logo.png" width="30%">
             <h2>Giacomo Ascari</h2>
             <br>
+            
 $(BUTTONS)
             <br><br><br>
             <p>This is the default page of asky.hopto.org, a personal webserver for educational purposes</p>
